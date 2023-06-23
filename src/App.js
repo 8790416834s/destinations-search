@@ -1,5 +1,6 @@
+import {Component} from 'react'
+import DestinationItem from './components/DestinationItem'
 import DestinationSearch from './components/DestinationSearch'
-
 import './App.css'
 
 const destinationsList = [
@@ -69,6 +70,19 @@ const destinationsList = [
   },
 ]
 
-const App = () => <DestinationSearch destinations={destinations} />
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <DestinationSearch />
+        <ul className="list-container">
+          {destinationsList.map(each => (
+            <DestinationItem image={each} key={each.id} />
+          ))}
+        </ul>
+      </div>
+    )
+  }
+}
 
 export default App

@@ -1,23 +1,21 @@
-import {Component} from 'react'
 import './index.css'
 
-class DestinationSearch extends Component {
-    const {destinations} = props
-    const {name, imgUrl} = destinations
-
-  state = {searchInput: ''}
-
-  render() {
-    return (
+const DestinationSearch = () => {
+  return (
+    <div className="main-container">
       <div>
-        <h1>Destination Search</h1>
-        <input type="search" />
-        <ul>
-        <
-        </ul>
+        <h1 className="main-heading">Destination Search</h1>
+        <div>
+          <input type="search" placeholder="search" />
+          <img
+            src="https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png"
+            className="search-icon"
+            alt="search icon"
+          />
+        </div>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default DestinationSearch
