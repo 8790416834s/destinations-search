@@ -71,10 +71,18 @@ const destinationsList = [
 ]
 
 class App extends Component {
+  state = {
+    searchInput: '',
+  }
+
+  onChangeSearchInput = event => {
+    this.setState({searchInput: event.target.value})
+  }
+
   render() {
     return (
       <div>
-        <DestinationSearch />
+        <DestinationSearch onChangeSearchInput={this.onChangeSearchInput} />
         <ul className="list-container">
           {destinationsList.map(each => (
             <DestinationItem image={each} key={each.id} />
