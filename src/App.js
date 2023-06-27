@@ -76,10 +76,14 @@ class App extends Component {
   }
 
   onChangeSearchInput = event => {
+    const {searchInput} = this.state
+
     this.setState({searchInput: event.target.value})
   }
 
   render() {
+    const {searchInput} = this.state
+
     return (
       <div>
         <DestinationSearch onChangeSearchInput={this.onChangeSearchInput} />

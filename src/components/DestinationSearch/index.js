@@ -2,7 +2,7 @@ import './index.css'
 
 const DestinationSearch = props => {
     const {onChangeSearchInput} = props
-    const onChangeSearchInput {
+    const onChangeInputSearch {
         onChangeSearchInput()
     }
   return (
@@ -10,7 +10,7 @@ const DestinationSearch = props => {
       <div>
         <h1 className="main-heading">Destination Search</h1>
         <div>
-          <input type="search" placeholder="search" onChange={onChangeSearchInput} />
+          <input type="search" placeholder="search" onChange={onChangeInputSearch} />
           <img
             src="https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png"
             className="search-icon"
