@@ -1,8 +1,8 @@
 import './index.css'
 
 const DestinationItem = props => {
-  const {image, key} = props
-  const {id, name, imgUrl} = image
+  const {image} = props
+  const {name, imgUrl} = image
 
   return (
     <li>

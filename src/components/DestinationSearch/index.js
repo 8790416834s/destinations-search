@@ -3,8 +3,8 @@ import './index.css'
 const DestinationSearch = props => {
   const {onChangeSearchInput} = props
 
-  const onChangeInputSearch = () => {
-    onChangeSearchInput()
+  const onChangeInputSearch = event => {
+    onChangeSearchInput(event)
   }
 
   return (
